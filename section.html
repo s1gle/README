@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="utf-8">
+		<title>section</title>
+		<link rel="stylesheet" href="style.css">
+        <script src="script.js"></script>
+        <script src="jquery-3.7.1.min.js"></script>
+	</head>
+	<body>
+        <div id="wrapper">
+            <div id="header">
+            <div id="menu">
+                <a href="index.html">Index</a>
+                <a href="section.html" class="active">Section</a>
+                <!--
+                <a href="page.html">Page</a>
+                <a href="grid.html">Grid</a>
+                -->                
+                <a href="#" id="toggle">toggle</a>
+            </div>
+            </div>
+            <div id="container">
+                <div id="left">
+                   <a href="#" onclick="getPage1()">Page 1</a> 
+                   <a href="#" onclick="getPage2()">Page 2</a>
+                   <a href="#" onclick="getPage3()">Page 3</a>
+                   <a href="#" onclick="getPage4()">Page 4</a>
+                   <a href="#" onclick="getPage5()">Page 5</a>
+                </div>
+                    <iframe src="content/page1.html" id="content">
+                    </iframe>
+                <div id="right">
+                    <div class="section">
+                        section 1
+                    </div>
+                    <div class="section">
+                        section 2
+                    </div>
+                    <div class="section">
+                        section 3
+                    </div>
+                </div>
+            </div>
+            <div id="footer"><span id="elem"></span>
+                <span id="elemquote"></span>
+            </div>
+        </div>
+        <script>getRandomIntEmoji(0, 79)</script>
+        <script>
+		    getRandomQuote(0, 88)</script>
+		<script>
+			$('i').css('color', 'blue');
+		</script>
+        <script>
+            function getPage1() {
+                $('#content').attr('src', 'content/page1.html');
+            }
+            function getPage2() {
+                $('#content').attr('src', 'content/page2.html');
+            }
+            function getPage3() {
+                $('#content').attr('src', 'content/page3.html');
+            }
+            function getPage4() {
+                $('#content').attr('src', 'content/page4.html');
+            }
+            function getPage5() {
+                $('#content').attr('src', 'content/page5.html');
+            }
+            </script>
+        <script>
+            $('#toggle').click(function() {
+                $('#left').toggle(500);
+            });
+    </script>             
+	</body>
+</html>

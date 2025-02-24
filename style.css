@@ -1,0 +1,99 @@
+body {
+	font-family: "Comic Sans MS";
+}
+
+#menu {
+	display: flex;
+/*    flex-direction: column; */
+}
+#menu a {
+	margin-right: 5px;
+	padding: 10px;
+	font: 15px Arial;
+	text-decoration: none;
+	color: #1437AD;
+	border: 1px solid #1437AD;
+}
+#menu a:hover, #menu a.active {
+	color: white;
+	border: 1px solid blue;
+	background: black;
+}
+#parent {
+	display: grid;
+	grid-template-columns: 1fr 1fr 3fr;
+	border: 2px solid #696989;
+	padding: 10px;
+	width: auto;
+}
+#parent > div {
+	padding: 10px;
+	border: 1px solid #696989;
+	box-sizing: border-box;
+	border: 1px solid #696989;
+}
+
+li > a {
+	display: flex;
+	flex-direction: column; 
+}
+
+* {
+	box-sizing: border-box;
+}
+
+#wrapper {
+	width: auto;
+	margin: 0px auto;
+	border: 1px solid black;
+}
+#header {
+	height: auto;
+	padding: 10px;
+	border: 1px solid black;
+}
+#container {
+	display: flex;
+	height: 80vh;
+}
+#content {
+	width: 100%;
+	height: auto;
+	padding: 10px;
+	border: 1px solid black;
+}
+#left {
+	width: 200px;
+	margin-right: 10px;
+	padding: 10px;
+	border: 1px solid black;
+	flex-direction: column;
+	display: flex;
+}
+#right {
+	width: 200px;
+	margin-left: 20px;
+	padding: 20px;
+	border: 1px solid black;
+    display: none;
+}
+#footer {
+	height: auto;
+	padding: 10px;
+	border: 1px solid black;
+}
+
+#seealso {
+	width: 80%;
+	margin: 5px;
+	padding: 5px;
+	border: 1px solid blue;
+	text-align: center;
+}
+
+#seealso {
+	text-align: center;
+	margin: 10px auto;
+	border: 0px solid;
+	background-color: silver;
+}

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Page1</title>
+		<link rel="stylesheet" href="../highlight.js-main/">
+<script src="/path/to/highlight.min.js"></script>
+<script>hljs.highlightAll();</script>
+        <link rel="stylesheet" href="../style.css">
+        <script src="script.js"></script>
+	</head>
+	<body>
+		<h1>
+			Введение в библиотеку jQuery
+		</h1>
+<p>
+	Сейчас мы с вами начнем изучать библиотеку jQuery. Для работы с ней вы должны владеть хотя бы минимальными навыками JavaScript.
+</p>
+<p>
+	Я рекомендую обучаться последовательно - сначала JavaScript, потом jQuery, иначе вы постоянно будете спотыкаться на незнании элементарных базовых вещей.
+</p>
+<h1>
+	Что такое jQuery?
+</h1>
+<p>
+	jQuery представляет собой библиотеку JavaScript - набор готовых функций, которые помогают делать некоторые вещи проще и удобнее, чем это делается в чистом JavaScript.
+</p>
+<p>
+	Сравните два кода, которые делают одно и тоже - первый на чистом JavaScript:
+</p>
+<code>
+	document.getElementById('elem').innerHTML = '!';
+</code>
+<p>
+	А второй - на jQuery:
+</p>
+<code>
+	$('#elem').html('!');
+</code>
+
+<p>
+	Код jQuery выглядит намного компактнее и проще для написания.
+<br>
+Сравните еще два кода: в первом мы получаем все элементы с классом www и ставим им красный цвет текста с помощью чистого JavaScript:
+</p>
+<code>
+	let elems = document.getElementsByClassName('www');<br>
+for (let i = 0; i < elems.length;<br>
+	i++) { <br>
+	elems[i].style.color = 'red';
+}
+</code>
+
+<p>
+	А во втором - на jQuery:
+</p>
+<code>
+	$('.www').css('color', 'red');
+</code>
+
+<p>
+	Здесь уже ощущается огромная разница - в чистом JavaScript пришлось делать цикл, а код jQuery особо и не поменялся по сравнению с первым примером.
+</p>
+
+	</body>
+</html>

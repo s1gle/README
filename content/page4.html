@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Page4</title>
+        <script src="../jquery-3.7.1.min.js"></script>
+        <style>
+            #elem, #elem1, #elem2, #elem3, #elem4 {
+            padding: 10px;
+            width: auto;
+            height: auto;
+            border: 1px solid green;
+            margin-top: 10px;
+        }
+        </style>
+	</head>
+	<body>
+		<h1>
+			Методы hide и show в jQuery
+		</h1>
+        <button id="hide">hide</button>
+        <button id="show">show</button>
+        <div id="elem">
+    Эффекты позволяют анимировать элемент, например - плавно скрыть или показать его. Для каждого эффекта существуют свои методы jQuery. Давайте начнем с методов hide и show. Методы hide и show позволяют скрывать и показывать элементы. Рассмотрим их работу.<br>
+    Можно задавать время выполнения эффекта в миллисекундах (1000 миллисекунд = 1 секунда). В этом случае эффект будет плавно проигрываться в течении заданного времени. Давайте зададим время выполнения эффекта 1 секунду и посмотрим, как поменяется эффект:
+    <pre><code>
+        $('#hide').click(function() {
+            $('#elem').hide(1000);
+        });
+        
+        $('#show').click(function() {
+            $('#elem').show(1000);
+        });
+</code></pre>  
+</div>        
+<script>
+        $('#hide').click(function() {
+            $('#elem').hide(1000);
+        });
+        
+        $('#show').click(function() {
+            $('#elem').show(1000);
+        });
+</script>         
+<h1>Методы slideUp и slideDown в jQuery</h1>           
+<button id="slipup">slipup</button>
+<button id="slipdown">slipdown</button>
+<div id="elem1">
+    Методы slideUp и slideDown позволяют сделать "закатывание" и "выкатывание" элемента обратно (параметром они также принимают время исполнения эффекта, если его не указать - возьмется время по умолчанию, 400мс). Как это выглядит - смотрите на следующем примере.
+    <pre><code>
+        $('#slipup').click(function() {
+            $('#elem1').slideUp(400);
+        });
+        
+        $('#slipdown').click(function() {
+            $('#elem1').slideDown(400);
+        });
+    </code></pre></div>
+    <script>
+        $('#slipup').click(function() {
+	        $('#elem1').slideUp(400);
+        });
+
+        $('#slipdown').click(function() {
+	        $('#elem1').slideDown(400);
+        });
+    </script>
+<h1>
+    Метод slideToggle в jQuery
+</h1>
+<button id="toggle">click me</button>
+<div id="elem2">Следующий метод - slideToggle работает так: если элемент скрыт - показывает его, а если показан - скрывает. Удобство этого метода в том, что это все можно повесить на одну кнопку, а не на две, как это было в предыдущих уроках.
+    <pre><code>
+        $('#toggle').click(function() {
+            $('#elem').slideToggle(1000);
+        });
+    </code></pre>
+</div>
+<script>
+    $('#toggle').click(function() {
+            $('#elem2').slideToggle(1000);
+        });
+</script>
+<h1>
+    Методы fadeOut и fadeIn в jQuery
+</h1>
+<button id="fadeout">fadeout</button>
+<button id="fadein">fadein</button>
+<div id="elem3">Методы fadeOut и fadeIn реализуют плавное исчезновение и появление элемента.
+    <pre><code>
+        $('#fadeout').click(function() {
+            $('#elem3').fadeOut(1500);
+        });
+        
+        $('#fadein').click(function() {
+            $('#elem3').fadeIn(1500);
+        });
+    </code></pre>
+</div>
+<script>
+$('#fadeout').click(function() {
+    $('#elem3').fadeOut(1500);
+});
+
+$('#fadein').click(function() {
+    $('#elem3').fadeIn(1500);
+});</script>
+<h1>
+    Метод fadeToggle в jQuery
+</h1>
+<button id="toggle1">click me</button>
+<div id="elem4">Метод fadeToggle работает аналогично методу slideToggle, он тоже реализует чередование эффектов: то показывает элемент, то скрывает. Например, мы можем, нажимая на одну и ту же кнопку и показать и скрыть элемент. 
+    <pre><code>
+        $('#toggle1').click(function() {
+            $('#elem4').fadeToggle(2000);
+        });
+    </code></pre>
+</div>
+<script>
+$('#toggle1').click(function() {
+    $('#elem4').fadeToggle(2000);
+});</script>
+	</body>
+</html>

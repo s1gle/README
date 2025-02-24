@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>grid</title>
+		<link rel="stylesheet" href="style.css">
+        <script src="script.js"></script>
+	</head>
+	<body>
+        <div id="wrapper">
+            <div id="header">
+                header
+                <div id="menu">
+                    <a href="page.html">Page</a>
+                    <a href="index.html">Index</a>
+                    <a href="grid.html" class="active">Grid</a>
+                    <a href="section.html">Section</a>
+                    <a href="#"><button onclick="Hidden()">on/off</button></a>
+                </div>    
+            </div>
+            <div id="container">
+                <div id="left">
+                    left sidebar
+                </div>
+                <div id="content">
+                    
+                </div>
+                <div id="right">
+                    right sidebar
+                </div>
+            </div>
+            <div id="footer">
+                footer
+            </div>
+        </div>
+        <script>
+        function Hidden() {
+            let elem = document.querySelector('#left');
+            elem.classList.toggle('hid');
+        }
+        </script>
+	</body>
+</html>
